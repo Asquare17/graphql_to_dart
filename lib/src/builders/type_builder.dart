@@ -183,7 +183,7 @@ class LocalField {
   LocalField({this.name, this.list, this.type, this.object});
 
   String toDeclarationStatement() {
-    return "${list! ? "List<" : ""}${type ?? "var"}${list! ? ">" : ""} $name;";
+    return "${list! ? "List<" : ""}${type ?? "var"}${list! ? ">" : ""}? $name;";
   }
 
   @override
